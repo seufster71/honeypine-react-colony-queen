@@ -7,7 +7,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import * as actions from './dashboard-actions';
 import DashboardView from "../../../memberView/colony/dashboard/dashboard-view";
 
-function DashboardContainer() {
+function CCDashboardContainer() {
 	const dashboardState = useSelector((state) => state.dashboard);
 	const appPrefs = useSelector((state) => state.appPrefs);
 	const dispatch = useDispatch();
@@ -30,4 +30,4 @@ function DashboardContainer() {
 }
 
 
-export default DashboardContainer;
+export default CCDashboardContainer;

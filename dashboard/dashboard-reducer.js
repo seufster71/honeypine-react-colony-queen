@@ -4,7 +4,7 @@
  export default function dashboardReducer(state = {}, action) {
 	let myState = {};
 	switch(action.type) {
-		case 'DASHBOARD_INPUT_CHANGE': {
+		case 'CC_DASHBOARD_INPUT_CHANGE': {
 			if (action.params != null) {
 				let clone = Object.assign({}, state);
 				clone.test_field = action.params.value;
@@ -13,7 +13,7 @@
         		return state;
     		}
     	}
-		case 'DASHBOARD_GET': {
+		case 'CC_DASHBOARD_GET': {
 			if (action.responseJson != null && action.responseJson.params != null) {
 				let marketStatus = {};
   				if (action.responseJson.params.ISOPEN != null) {

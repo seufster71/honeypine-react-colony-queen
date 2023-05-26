@@ -9,7 +9,7 @@ export function inputChange(field,value) {
 		 let params = {};
 		 params.field = field;
 		 params.value = value;
-		 dispatch({ type:"DASHBOARD_INPUT_CHANGE",params});
+		 dispatch({ type:"CC_DASHBOARD_INPUT_CHANGE",params});
 	 };
 }
 
@@ -46,7 +46,7 @@ export function getDashboard(value) {
         
       })
 		.then(responseJson => {
-			dispatch({ type: "DASHBOARD_GET", responseJson });
+			dispatch({ type: "CC_DASHBOARD_GET", responseJson });
 				if (info != null) {
 		        	  dispatch({type:'SHOW_STATUS',info:info});  
 		        }
